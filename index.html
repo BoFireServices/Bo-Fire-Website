@@ -1,0 +1,95 @@
+
+<!-- BO Fire Website (Astro + Tailwind CSS) -->
+<!-- Basic HTML Structure for Static Site -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BO Fire – Fire Safety Equipment & Services in Pretoria" />
+  <title>BO Fire | Fire Safety Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-black">
+
+  <!-- Header -->
+  <header class="bg-black text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">BO Fire</h1>
+      <nav class="space-x-4">
+        <a href="#home" class="hover:text-red-500">Home</a>
+        <a href="#about" class="hover:text-red-500">About</a>
+        <a href="#services" class="hover:text-red-500">Services</a>
+        <a href="#products" class="hover:text-red-500">Products</a>
+        <a href="#contact" class="hover:text-red-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Home -->
+  <section id="home" class="bg-red-600 text-white py-16 text-center">
+    <h2 class="text-4xl font-bold mb-4">Fire Safety You Can Trust</h2>
+    <p class="text-lg">BO Fire – Pretoria’s trusted fire protection experts since 2011</p>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-12 px-4 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold text-red-600 mb-4">About Us</h3>
+    <p>
+      BO Fire is a fire safety company based in Pretoria, operating since 2011. We offer fire extinguisher servicing and refills, servicing of all fire equipment (hose reels, hydrants, alarms, etc.), new fire equipment sales, compliance certificates, and fire safety training. We are BSI & SAQCC compliant, with registered and experienced technicians. We serve Pretoria and surrounding areas and can be contacted at 083 294 1917 / 012 004 1437. We are located at 68 Annie Botha Avenue, Riviera, Pretoria, 0084.
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-gray-100 py-12 px-4 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-red-600 mb-6 text-center">Our Services</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div><strong>Fire Extinguisher Servicing & Refills</strong></div>
+      <div><strong>Fire Equipment Maintenance</strong></div>
+      <div><strong>Compliance Certificates</strong></div>
+      <div><strong>New Equipment Sales</strong></div>
+      <div><strong>Fire Safety Training</strong></div>
+      <div><strong>Site Inspections & Reports</strong></div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-12 px-4 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-red-600 mb-6 text-center">Our Products</h3>
+    <p class="text-center">Coming soon – an online shop with fire extinguishers, safety signage, and more.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-100 py-12 px-4 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold text-red-600 mb-6 text-center">Contact Us</h3>
+    <form class="space-y-4">
+      <input type="text" placeholder="Name" class="w-full border p-2" required>
+      <input type="email" placeholder="Email" class="w-full border p-2" required>
+      <textarea placeholder="Message" class="w-full border p-2 h-32" required></textarea>
+      <button type="submit" class="bg-red-600 text-white px-4 py-2">Send Message</button>
+    </form>
+    <div class="mt-6 text-center">
+      <p>📍 68 Annie Botha Ave, Riviera, Pretoria</p>
+      <p>📞 083 294 1917 | 012 004 1437</p>
+      <div class="mt-4 space-x-4">
+        <a href="https://facebook.com/BoFireServices" class="text-blue-600">Facebook</a>
+        <a href="https://instagram.com/BoFireServices" class="text-pink-600">Instagram</a>
+        <a href="https://x.com/BoFireServices" class="text-gray-600">X</a>
+        <a href="https://linkedin.com/company/bofireservices" class="text-blue-700">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="py-12 px-4 max-w-6xl mx-auto">
+    <iframe class="w-full h-64 border" src="https://www.google.com/maps?q=68+Annie+Botha+Ave,+Riviera,+Pretoria&output=embed"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-4">
+    <p>&copy; 2025 BO Fire. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
