@@ -3,40 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <title>BO Fire | Home</title>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-black text-gray-100 relative">
-  
-  <!-- Background Video -->
-  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-    <source src="bofire_background.mp4" type="video/mp4">
-  </video>
-
-  <!-- Header -->
-  <header class="p-4 flex items-center space-x-4 relative z-10">
-    <img src="bofire_logo.png" alt="BO Fire Logo" class="w-16 h-16">
-    <h1 class="text-3xl font-bold">
-      <a href="index.html" class="hover:text-red-500">BO Fire</a>
-    </h1>
-    <nav class=" ml-auto space-x-4">
-      <a href="index.html" class="hover:text-red-500">Home</a>
-      <a href="services.html" class="hover:text-red-500">Services</a>
-      <a href="products.html" class="hover:text-red-500">Products</a>
-      <a href="contact.html" class="hover:text-red-500">Contact</a>
+<body>
+  <header>
+    <img src="images/bo-fire-logo.png" alt="BO Fire Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <main class="p-8 relative z-10 max-w-4xl">
-    <h2 class="text-4xl font-bold mb-4 text-red-500">About Us</h2>
-    <p>BO Fire Maintenance was established in 2011 and has proudly grown into a trusted name in fire safety across Pretoria and surrounding areas. We are part of the reputable Centa Group, bringing over a decade of industry expertise and a strong commitment to protecting lives and property.</p>
-
-    <p>We are fully SAQCC and SABS registered, and all our technicians are qualified and experienced to ensure the highest standard of service. As a BSI-compliant company, we adhere strictly to local and international fire safety regulations.</p>
-
-    <p>At BO Fire, we service, refill, and supply all types of fire equipment—including fire extinguishers, hose reels, hydrants, fire alarms, and more. We also offer fire safety training, compliance certificates, and supply all necessary fire and evacuation signage to keep your workplace compliant and prepared.</p>
-
-    <p>Our mission is simple: to deliver reliable, professional fire protection solutions with integrity and efficiency. Whether you’re a business, school, or residential facility, you can count on us for personalized service and expert advice.</p>
-  </main>
-
+  <section class="hero">
+    <video src="images/bofire_background.mp4" autoplay muted loop></video>
+    <div class="hero-content">
+      <h1>About Us</h1>
+      <p>BO Fire Maintenance was established in 2011 and has proudly grown into a trusted name in fire safety across Pretoria and surrounding areas. We are part of the reputable Centa Group, bringing over a decade of industry expertise and a strong commitment to protecting lives and property.</p>
+    </div>
+  </section>
 </body>
 </html>
