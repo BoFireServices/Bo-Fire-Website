@@ -14,7 +14,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.7);
+  background:rgba(0, 0, 0, 0.7);
 }
 
 header .logo-name {
@@ -72,8 +72,8 @@ header ul a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width:100%;
+  height:100%;
   background:rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
@@ -122,10 +122,60 @@ section p {
   line-height: 1.5;
 }
 
+.contact {
+  position: relative;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact .contact-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.contact .contact-background video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.contact .contact-background::after {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.contact .hero-content {
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+  background:rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact .hero-content h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #ff0000;
+}
+
 .contact form {
   margin-bottom: 30px;
-  max-width: 400px;
-  margin: 0 auto 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,6 +207,22 @@ section p {
   background: #cc0000;
 }
 
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.contact-info a {
+  color: #ff0000;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.contact-info a:hover {
+  color: #ffffff;
+}
+
 @media (max-width: 768px) {
   header ul {
     flex-direction: column;
@@ -175,5 +241,15 @@ section p {
   
   .hero-content p {
     font-size: 1.5rem;
+  }
+  
+  .contact .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .contact form input, 
+  .contact form textarea,
+  .contact form button {
+    font-size: 1rem;
   }
 }
