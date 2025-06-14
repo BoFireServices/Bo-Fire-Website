@@ -1,65 +1,51 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;  /* Prevent horizontal scroll */
-  color: #ffffff;
+  overflow-x: hidden;
   font-family: Arial, sans-serif;
+  color: #ffffff;
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 40px;
   position: fixed;
   width: 100%;
-  z-index: 100;
   background:rgba(0, 0, 0, 0.7);
-}
-
-header .logo-name {
+  padding: 20px 40px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  z-index: 100;
 }
 
 header .logo {
   height: 100px;
 }
 
-header .company-name {
-  color: #ffffff;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 header ul {
   list-style: none;
   display: flex;
   gap: 30px;
-  margin-right: 60px;
+  margin: 0;
 }
 
-header ul a {
+header ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
-header ul a:hover {
+header ul li a:hover {
   color: #ff0000;
 }
 
-.contact {
+.hero {
   position: relative;
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #ffffff;
-  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-.contact .contact-background video {
+.hero video {
   position: absolute;
   top: 0;
   left: 0;
@@ -69,8 +55,7 @@ header ul a:hover {
   z-index: -2;
 }
 
-.contact .contact-background::after {
-  content:'';
+.hero .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -80,69 +65,34 @@ header ul a:hover {
   z-index: -1;
 }
 
-.contact .hero-content {
+.hero .hero-content {
   position: relative;
-  z-index: 10;
-  padding: 20px;
+  z-index: 1;
+  padding: 100px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
   background:rgba(0, 0, 0, 0.7);
   border-radius: 10px;
-  max-width: 400px;
-  margin: 0 auto;
 }
 
-.contact .hero-content h1 {
-  margin-bottom: 20px;
-  font-size: 2.5rem;
+.hero .hero-content h1 {
   color: #ff0000;
+  margin-bottom: 20px;
+  font-size: 3rem;
 }
 
-.contact form {
+.hero .hero-content .punchline {
+  color: #ffcc00;
+  font-size: 2rem;
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-weight: bold;
 }
 
-.contact form input, 
-.contact form textarea {
-  display: block;
-  width: 100%;
+.hero .hero-content p {
+  color: #ffffff;
+  font-size: 1.2rem;
   margin-bottom: 20px;
-  padding: 10px;
-  color: #000;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  border: none;
-}
-
-.contact form button {
-  padding: 10px 20px;
-  background: #ff0000;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  font-size: 1.2rem;
-  border-radius: 5px;
-}
-
-.contact form button:hover {
-  background: #cc0000;
-}
-
-.contact-info p {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: #ffffff;
-}
-
-.contact-info a {
-  color: #ff0000;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.contact-info a:hover {
-  color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -157,17 +107,20 @@ header ul a:hover {
     border-radius: 10px;
   }
   
-  header .company-name {
-    font-size: 1.2rem;
+  header .logo {
+    height: 60px;
   }
   
-  .contact .hero-content h1 {
+  .hero .hero-content h1 {
     font-size: 1.5rem;
   }
   
-  .contact form input, 
-  .contact form textarea,
-  .contact form button {
+  .hero .hero-content .punchline {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero .hero-content p {
     font-size: 1rem;
   }
 }
