@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>BO Fire - Contact</title>
+<title>Contact Us</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,36 +11,43 @@
       <img src="images/bo-fire-logo.png" alt="BO Fire Logo" class="logo">
       <span class="company-name">BO Fire</span>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
   </header>
 
-  <section class="hero">
+  <section class="contact">
     <video src="images/bofire_background.mp4" autoplay muted loop></video>
     <div class="hero-content">
       <h1>Contact Us</h1>
-      <form>
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" required></textarea>
+      <form action="mailto:bofiremedia@gmail.com" method="POST" enctype="text/plain">
+        <input name="name" type="text" placeholder="Name and Surname" required>
+        <input name="company" type="text" placeholder="Company Name (optional)"> 
+        <input name="cell" type="tel" pattern="[0-9]{10}" placeholder="Cell Number (10-digits)" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
         <button type="submit">Send</button>
       </form>
 
       <div class="contact-info">
         <p>📍 68 Annie Botha Ave, Riviera, Pretoria</p>
         <p>📞 083 294 1917 | 012 004 1437</p>
-        <p>🔹 <a href="https://facebook.com/BoFireServices" target="_blank">Facebook</a></p>
-        <p>🔹 <a href="https://instagram.com/BoFireServices" target="_blank">Instagram</a></p>
-        <p>🔹 <a href="https://x.com/BoFireServices" target="_blank">X</a></p>
-        <p>🔹 <a href="https://linkedin.com/company/bofireservices" target="_blank">LinkedIn</a></p>
-        <iframe src="https://www.google.com/maps?q=68+Annie+Botha+Ave,+Riviera,+Pretoria&output=embed" style="width:100%;height:250px;border:none;"></iframe>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/BoFireServices" target="_blank"><span>Facebook</span></a>
+          <a href="https://www.instagram.com/BoFireServices" target="_blank"><span>Instagram</span></a>
+          <a href="https://x.com/BoFireServices" target="_blank"><span>X</span></a>
+          <a href="https://www.linkedin.com/company/bofireservices" target="_blank"><span>LinkedIn</span></a>
+        </div>
+
+        <iframe src="https://www.google.com/maps?q=68+Annie+Botha+Ave,+Riviera,+Pretoria&output=embed" 
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
       </div>
+
     </div>
   </section>
 </body>

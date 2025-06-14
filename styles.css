@@ -1,9 +1,9 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;  /* Prevent horizontal scroll */
   color: #ffffff;
   font-family: Arial, sans-serif;
-  overflow-x: hidden;  /* Hides horizontal scroll, lets vertical scroll */
 }
 
 header {
@@ -14,7 +14,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 100;
-  background:rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 header .logo-name {
@@ -52,7 +52,7 @@ header ul a:hover {
 
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   overflow: hidden;
 }
@@ -70,10 +70,10 @@ header ul a:hover {
 .hero::after {
   content:'';
   position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background:rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
@@ -122,33 +122,25 @@ section p {
   line-height: 1.5;
 }
 
-.contact {
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #ffffff;
-  background:rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.contact h1 {
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-  color: #ff0000;
-}
-
 .contact form {
   margin-bottom: 30px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contact form input, .contact form textarea {
+.contact form input, 
+.contact form textarea {
   display: block;
   width: 100%;
   margin-bottom: 20px;
   padding: 10px;
   color: #000;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
 }
 
 .contact form button {
@@ -158,21 +150,11 @@ section p {
   border: none;
   cursor: pointer;
   font-size: 1.2rem;
+  border-radius: 5px;
 }
 
-.contact-info p {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: #ffffff;
-}
-
-.contact-info a {
-  color: #ff0000;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  color: #ffffff;
+.contact form button:hover {
+  background: #cc0000;
 }
 
 @media (max-width: 768px) {
