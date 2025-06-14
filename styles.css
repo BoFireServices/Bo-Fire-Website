@@ -36,6 +36,7 @@ header ul {
   list-style: none;
   display: flex;
   gap: 30px;
+  margin-right: 60px;
 }
 
 header ul a {
@@ -87,19 +88,26 @@ header ul a:hover {
   z-index: 10;
 }
 
-.hero-content h1 {
+.hero-content p {
   margin-bottom: 20px;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #ff0000;
+  font-weight: bold;
 }
 
-.hero-content h2 {
+.about {
   margin-top: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 20px;
   font-size: 2.5rem;
   color: #ff0000;
 }
 
-.hero-content p {
+.about p {
   margin-bottom: 20px;
   font-size: 1.2rem;
   line-height: 1.5;
@@ -155,4 +163,25 @@ header ul a:hover {
 
 .contact-info a:hover {
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  header ul {
+    flex-direction: column;
+    gap: 10px;
+    background:rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    border-radius: 10px;
+  }
+  
+  header .company-name {
+    font-size: 1.2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
 }
