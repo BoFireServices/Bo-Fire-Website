@@ -13,10 +13,23 @@ header {
   position: absolute;
   width: 100%;
   z-index: 100;
+  background:rgba(0, 0, 0, 0.5);
+}
+
+header .logo-name {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 header .logo {
-  height: 60px;
+  height: 100px;
+}
+
+header .company-name {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 header ul {
@@ -81,6 +94,29 @@ header ul a:hover {
 }
 
 .hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.about {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #ffffff;
+  background:rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.about h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #ff0000;
+}
+
+.about p {
+  margin-bottom: 20px;
   font-size: 1.2rem;
   line-height: 1.5;
 }
