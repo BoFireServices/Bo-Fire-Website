@@ -91,7 +91,7 @@ header ul a:hover {
 .hero-content p {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #ff0000;
+  color: #ff0000;  /* <- Red for the punchline */
   font-weight: bold;
 }
 
@@ -104,13 +104,14 @@ header ul a:hover {
 .about h2 {
   margin-bottom: 20px;
   font-size: 2.5rem;
-  color: #ff0000;
+  color: #ff0000;  /* <- Heading in red */
 }
 
 .about p {
   margin-bottom: 20px;
   font-size: 1.2rem;
   line-height: 1.5;
+  color: #ffffff;  /* <- Explanation in white */
 }
 
 .contact {
@@ -127,7 +128,7 @@ header ul a:hover {
 .contact h1 {
   margin-bottom: 20px;
   font-size: 2.5rem;
-  color: #ff0000;
+  color: #ff0000;  /* <- Heading in red */
 }
 
 .contact form {
@@ -154,6 +155,7 @@ header ul a:hover {
 .contact-info p {
   margin-bottom: 10px;
   font-size: 1.2rem;
+  color: #ffffff;  /* <- Explanation in white */
 }
 
 .contact-info a {
